@@ -1,48 +1,64 @@
-import javax.swing.*;
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.prueba;
+ import javax.swing.*;
+/**
+ *
+ * @author HP
+ */
 public class Registro {
+     Registro[] registro = new Registro [50];
+    
+   //private String[] nombre;
+    //private long[] cedula;
+    //private long[] celular;
+      
+     
+     
+    private String[] nombre = new String[50];
+    private long[] cedula = new long[50];
+    private long[] celular = new long[50];
+    private String[] correo = new String[50];
+    private String[] direccion = new String[50];
 
-    private String nombre;
-    private int cedula;
-    private int celular;
-    private String correo;
-    private String direccion;
-
-
+    
+    
     // constructor
     public Registro(){}
 
     // get y set
 
-    public String getnombre(){
+    public String[] getnombre(){
         return nombre;
     }
-    public void setNombre(String nombre){
+    public void setNombre(String[] nombre){
         this.nombre=nombre;
     }
 
-    public int getCedula(){
+    public long[] getCedula(){
         return cedula;
     }
-    public void setCedula(int cedula){
+    public void setCedula(long[] cedula){
         this.cedula=cedula;
     }
 
-    public int getCelular(int celular){
+    public long[] getCelular(long[] celular){
         return celular;
     }
 
-    public String getCorreo(){
+    public String[] getCorreo(){
         return correo;
     }
-    public void setCorreo(String correo){
+    public void setCorreo(String[] correo){
         this.correo=correo;
     }
 
-    public String getDireccion(){
+    public String[] getDireccion(){
         return direccion;
     }
-    public void setDireccion(String direccion) {
+    public void setDireccion(String[] direccion) {
         this.direccion = direccion;
     }
 
@@ -90,4 +106,6 @@ public class Registro {
 
 
 }
+
+    
 

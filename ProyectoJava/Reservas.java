@@ -1,17 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.prueba;
 import javax.swing.*;
-
+/**
+ *
+ * @author HP
+ */
 public class Reservas {
+ 
 //numero de habitaciones
     boolean habitacion1= true;boolean habitacion2= true;boolean habitacion3= true;boolean habitacion4= true;boolean habitacion5= true;
     boolean habitacion6= false;boolean habitacion7= false;
 
+    boolean[] habitaciones = {true, true, true, true, true, false, false};
 
 
     public void reservarHabitacion() {
         JOptionPane.showMessageDialog(null,"Bienvenido al apartado de reservacion de habitacion"+"\n"+"tenemos a disposicion 7 habitaciones completas"+"\n"
         +"por favor ingresar el numero de habitacion deseada");
+        
+        for (int i = 0; i < habitaciones.length; i++) {
         int lectura1= Integer.parseInt(JOptionPane.showInputDialog("introduzca el numero de habitacion que desea"));
-
+        
+          
         if (lectura1==1 && habitacion1== true){
             JOptionPane.showMessageDialog(null,"se reservo correctamente");
             habitacion1=false;
@@ -54,11 +67,15 @@ public class Reservas {
 
 
 
-
+        }
 
     }
 
 
 
 
-}
+}  
+    
+    
+    
+
